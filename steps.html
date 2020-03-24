@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<style type="text/css">
+			.hidden-sm {}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container self-head">
+				<div class="row">
+					<div class="navbar-header navbar-left col-md-1">
+						<div class="navbar-brand self-logo">
+							MyBlog
+						</div>
+					</div>
+					<div class="col-md-5 col-md-offset-3 hidden-xs">
+						<ul class="nav navbar-nav self-navbar-font">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="study.html">学习</a></li>
+							<li class="self-active"><a href="steps.html">脚印</a></li>
+							<li><a href="#">关于</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 self-search hidden-xs">
+						<div class="hidden-xs col-md-8 hidden" id="search-form">
+							<form class="form-inline" action="#" method="post">
+								<div class="form-group search-form-self">
+									<input type="text" name="search" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="col-md-1 col-md-offset-2 hidden-xs">
+							<span type="button" class="glyphicon glyphicon-search" id="search"></span>
+						</div>
+					</div>
+				</div>
+
+				<!--  移动端  -->
+				<div class="row visible-xs self-app" id="self-app-menu-btn">
+					<!-- Single button -->
+					<div class="btn-group">
+						<span type="button" class="glyphicon glyphicon-th dropdown-toggle self-app-btn" data-toggle="dropdown"
+						 aria-haspopup="true" aria-expanded="false">
+						</span>
+						<ul class="dropdown-menu self-app-menu">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="study.html">学习</a></li>
+							<li><a href="steps.html">脚印</a></li>
+							<li><a href="#">关于</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="bgground-self">
+			<div class="container">
+				<!--  content  -->
+				<div class="col-md-2 col-md-offset-5 time-flag">
+					<div>脚印</div>
+				</div>
+				<div class="row steps-self">
+					<div class="col-md-6 col-md-offset-3 steps-title">
+						<div class="items text-center">
+							<a href="#">
+								<h3>Bootstrap 编码规范</h3>
+							</a>
+						</div>
+						<div class="border-self">
+							<div class="border-self-time">
+								<span>2020-03-24</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-3 steps-title">
+						<div class="items text-center">
+							<a href="#">
+								<h3>Bootstrap 编码规范</h3>
+							</a>
+						</div>
+						<div class="border-self">
+							<div class="border-self-time">
+								<span>2020-03-24</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-3 steps-title">
+						<div class="items text-center">
+							<a href="#">
+								<h3>Bootstrap 编码规范</h3>
+							</a>
+						</div>
+						<div class="border-self">
+							<div class="border-self-time">
+								<span>2020-03-24</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<div class="turn-top-border" id="goToTop">
+				<a href="#" class="glyphicon glyphicon-chevron-up turn-top"></a>
+			</div>
+			<span>create By weiss time 2020-3-23</span>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#goToTop").hide() //隐藏go to top按钮
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 420) { //当window的scrolltop距离大于1时，go to top按钮淡出，反之淡入
+						$("#goToTop").stop().fadeIn(800);
+					} else {
+						$("#goToTop").stop().fadeOut(800);
+					}
+				});
+			});
+
+			// 给go to top按钮一个点击事件
+			$("#goToTop a").click(function() {
+				$("html,body").animate({
+					scrollTop: 0
+				}, 1200); //点击go to top按钮时，以800的速度回到顶部，这里的800可以根据你的需求修改
+				return false;
+			});
+
+			// App  menu
+			$("#self-app-menu-btn").click(function() {
+				// alert(1);
+				$(".self-app-menu").stop().slideToggle(800);
+			})
+
+			//  search 事件
+			$("#search").click(function() {
+				// alert("aaa");
+				$search = $("#search-form");
+				if ($search.hasClass("hidden")) {
+					$search.removeClass("hidden");
+					$search.addClass("search-form-add");
+				} else {
+					$search.addClass("hidden");
+					$search.removeClass("search-form-add");
+				}
+			})
+		});
+	</script>
+</html>
