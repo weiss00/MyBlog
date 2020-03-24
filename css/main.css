@@ -257,7 +257,7 @@ body{
 		position: absolute !important;
 		/* top: 20px; */
 		top: -60px !important;
-		left: -22px !important;
+		left: -2px !important;
 		height: 60px !important;
 		border-right: 4px solid orange;
 		line-height: 60px !important;
@@ -447,4 +447,27 @@ body{
 .keyword{
 	color: deeppink;
 	font-size: 28px;
+}
+
+/**
+ * Login
+ */
+
+.self-login{
+	margin-top: 140px;
+	/* margin: 0 auto; */
+	text-align: center;
+	color: #fff;
+	/* font-size: 24px; */
+}
+
+.self-login-form{
+	background-color: #111;
+	opacity: 0.70;
+}
+
+.login-title>h3{
+	font-size: 26px;
+	font-weight: bold;
+	color: palevioletred;
 }
