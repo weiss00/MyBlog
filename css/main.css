@@ -220,7 +220,7 @@ body{
 		margin: 0 auto;
 		float: left;
 		position: absolute;
-		left: -200px;
+		left: -245px !important;
 		bottom: -5px;
 	}
 	
@@ -237,26 +237,36 @@ body{
 		padding-right: 10px !important;
 	}
 	
+	.time-flag-title{
+		/* margin-left: 40px; */
+	}
+	
 	.steps-self{
-		margin: 0 auto !important;
+		/* margin: 0 auto !important; */
 		margin-top: 45px !important;
 	}
 	
 	.steps-title{
-		position: relative !important;
+		position: relative ;
 		margin-bottom: 60px !important;
 	}
 	
 	.border-self{
-		width: 270px !important;
+		/* margin: 0 auto !important; */
+		width: 220px !important;
 		position: absolute !important;
 		/* top: 20px; */
 		top: -60px !important;
-		left: -50px !important;
+		left: -22px !important;
 		height: 60px !important;
 		border-right: 4px solid orange;
 		line-height: 60px !important;
-		text-align: center !important;
+		/* text-align: center !important; */
+	}
+	
+	.border-self-time{
+		/* margin: 0 auto !important; */
+		/* text-align: center !imp; */
 	}
 	
 	.border-self span{
@@ -272,6 +282,23 @@ body{
 		opacity: 0.55;
 	}
 	
+	.about-head-img{
+		margin: 0 auto;
+		/* margin-top: 100px; */
+		width: 340px !important;
+		height: 562px;
+		border: 2px solid lightblue;
+		padding-right: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.about-head-img img{
+		padding-top: 13px;
+		/* padding-left: -20px; */
+		padding-right: 34px;
+		width: 338px !important;
+		height: 545px;
+	}
 }
 
 
@@ -351,4 +378,73 @@ body{
 	font-size: 16px;
 	font-weight: bold;
 	color: greenyellow;
+}
+
+/**
+ * About 页面
+ */
+
+.self-about{
+	margin-top: 80px;
+}
+.about-head-img{
+	/* margin-top: 100px; */
+	width: 450px;
+	height: 562px;
+	border: 2px solid lightblue;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+.about-head-img img{
+	padding-top: 13px;
+	/* padding-left: -20px; */
+	padding-right: 34px;
+	width: 450px;
+	height: 545px;
+}
+
+.self-about-title{
+	margin-top: -10px;
+	height: 60px;
+	font-size: 24px;
+	border-bottom: 2px solid teal;
+	color: peachpuff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+}
+
+.self-margin-left{
+	margin-left: 10px;
+}
+.self-about-info{
+	/* width: 400px; */
+	padding-top: 20px;
+	/* padding-left: -20px; */
+	background-color: #222;
+	color: #008080;
+}
+
+.self-about-info code{
+	background-color: #222;
+}
+
+/**
+ * study 页面
+ */
+
+.self-keyword-title{
+	height: 160px;
+	margin-top: 75px;
+	text-align: center;
+	color: teal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 160px;
+}
+
+.keyword{
+	color: deeppink;
+	font-size: 28px;
 }
