@@ -24,6 +24,11 @@ body{
 	font-weight: bold;
 }
 
+.self-logo a{
+	text-decoration: none;
+	color: teal;
+}
+
 /* App */
 
 .self-app{
@@ -175,6 +180,11 @@ body{
 	right: 100px;
 	bottom: 80px;
 	border-radius: 50%;
+}
+
+.turn-top{
+	width: 40px;
+	height: 40px;
 }
 
 @media(max-width: 676px){
@@ -470,4 +480,106 @@ body{
 	font-size: 26px;
 	font-weight: bold;
 	color: palevioletred;
+}
+
+.self-table{
+	margin-top: 80px;
+	text-align: center;
+	min-height: 492px;
+}
+
+.self-table th{
+	color: orangered;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	background-color: #eee;
+}
+
+.self-table td{
+	background-color: #eee;
+}
+
+/**
+ * Detail 页面
+ */
+
+.detail-self-head{
+	min-height: 652px;
+	margin-top: 120px;
+}
+
+.detail-content h2{
+	/* padding-bottom: 20px; */
+	font-size: 18px;
+	/* color: ; */
+	color: aliceblue;
+	text-align: center;
+}
+
+.detail-content p{
+	font-size: 16px;
+	color: greenyellow;
+	text-indent: 2em;
+	/* font-weight: bold; */
+	opacity: 0.64;
+}
+
+.head-title{
+	font-weight: bold;
+	font-size: 22px !important;
+	color: mediumseagreen !important;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.items-time-self{
+	width: 140px;
+	height: 20px;
+	text-align: center;
+	margin: 0 auto;
+	float: right;
+	position: absolute;
+	right: 5px;
+	bottom: -1px;
+}
+
+.items-time-self p{
+	font-size: 14px;
+	color: mediumaquamarine;
+}
+
+/**
+ * Blog-Input  页面
+ */
+
+.self-editor{
+	margin-top: 90px;
+	min-height: 562px;
+}
+
+.self-editor-title{
+	margin-top: 10px;
+	margin-bottom: 15px;
+	/* width: 400px; */
+}
+
+.self-title-editor{
+	background-color: #222;
+	color: seagreen;
+	opacity: 0.85;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.self-editor-title input{
+	background-color: #eee;
+	opacity: 0,63;
+	color: darkorange;
+}
+
+.editor-self-btn{
+	/* margin: 0 auto; */
+	text-align: center;
+	margin-bottom: 15px;
 }

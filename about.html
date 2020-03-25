@@ -17,7 +17,7 @@
 				<div class="row">
 					<div class="navbar-header navbar-left col-md-1">
 						<div class="navbar-brand self-logo">
-							MyBlog
+							<a href="admin/login.html">MyBlog</a>
 						</div>
 					</div>
 					<div class="col-md-5 col-md-offset-3 hidden-xs">
@@ -97,8 +97,7 @@
 			</div>
 			<span>create By weiss time 2020-3-23</span>
 		</div>
-	</body>
-	<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function() {
@@ -112,7 +111,7 @@
 					}
 				});
 			});
-
+	
 			// 给go to top按钮一个点击事件
 			$("#goToTop a").click(function() {
 				$("html,body").animate({
@@ -120,13 +119,13 @@
 				}, 1200); //点击go to top按钮时，以800的速度回到顶部，这里的800可以根据你的需求修改
 				return false;
 			});
-
+	
 			// App  menu
 			$("#self-app-menu-btn").click(function() {
 				// alert(1);
 				$(".self-app-menu").stop().slideToggle(800);
 			})
-
+	
 			//  search 事件
 			$("#search").click(function() {
 				// alert("aaa");
@@ -141,4 +140,5 @@
 			})
 		});
 	</script>
+	</body>
 </html>
