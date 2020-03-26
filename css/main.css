@@ -583,3 +583,17 @@ body{
 	text-align: center;
 	margin-bottom: 15px;
 }
+
+/**
+ * Notice
+ */
+
+.self-notice{
+	margin: 0 auto;
+	width: 400px;
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #222;
+	opacity: 0.88;
+}
